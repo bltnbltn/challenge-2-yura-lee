@@ -19,13 +19,13 @@ ul {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background: #eef2fd;
+  background-image: url(./img/bg.svg);
 }
 
 .chat_container {
   width: 400px;
   height: 600px;
-  background-color: #7388ba;
+  background-color: #323e5b;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,14 @@ ul {
 
 .chat_content {
   padding: 16px;
-  height: 300px;
+  height: 80%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.chat_content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .chat_content ul li {
@@ -47,7 +54,7 @@ ul {
   margin: 20px 10px;
 }
 
-#sender {
+#list .sender {
   margin-left: auto;
 }
 
@@ -61,12 +68,12 @@ ul {
 }
 
 button {
-  padding: 14px 20px;
+  padding: 12px 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  background-color: #1b2950;
+  background-color: #5873ed;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 0;
 }
 
@@ -80,5 +87,5 @@ input[type='text'] {
 }
 
 ::placeholder {
-  color: #9aa1b4;
+  color: #a5acbd;
 }
