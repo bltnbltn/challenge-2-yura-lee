@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body,
 h1,
 h2,
@@ -6,9 +10,75 @@ p {
   margin: 0;
 }
 
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .main {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background: url(img/Gambling.jpg) no-repeat center / cover;
+  background: #eef2fd;
+}
+
+.chat_container {
+  width: 400px;
+  height: 600px;
+  background-color: #7388ba;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px 3px #8a98b86e;
+}
+
+.chat_content {
+  padding: 16px;
+  height: 300px;
+}
+
+.chat_content ul li {
+  width: fit-content;
+  height: auto;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 20px 10px;
+}
+
+#sender {
+  margin-left: auto;
+}
+
+.input_field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+
+button {
+  padding: 14px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #1b2950;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0;
+}
+
+input[type='text'] {
+  background-color: #e8ebf3;
+  border: 0;
+  width: 290px;
+  height: 50px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+::placeholder {
+  color: #9aa1b4;
 }
