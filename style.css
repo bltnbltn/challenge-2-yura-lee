@@ -20,17 +20,43 @@ ul {
   justify-content: center;
   height: 100vh;
   background-image: url(./img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .chat_container {
   width: 400px;
   height: 600px;
-  background-color: #323e5b;
+  background-color: #eef0f6;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0px 4px 10px 3px #8a98b86e;
+}
+.client {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 80px;
+  background-color: #323e5b;
+}
+
+.client img {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.client-info {
+  color: #fff;
+}
+
+.client-info p {
+  font-size: 0.8em;
+  color: #42d1f8;
+  margin-top: 4px;
 }
 
 .chat_content {
@@ -48,14 +74,19 @@ ul {
 .chat_content ul li {
   width: fit-content;
   height: auto;
-  padding: 20px;
-  border-radius: 4px;
-  background-color: #fff;
+  padding: 16px;
   margin: 20px 10px;
+}
+
+.reciever {
+  border-radius: 20px 20px 20px 0px;
+  background-color: rgb(255, 255, 255);
 }
 
 #list .sender {
   margin-left: auto;
+  border-radius: 20px 20px 0px 20px;
+  background-color: #ffd000;
 }
 
 .input_field {
